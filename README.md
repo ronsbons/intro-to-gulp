@@ -14,6 +14,7 @@ Gulp is often used to do frontend tasks like:
 - Optimizing all assets (CSS, JS, fonts, and images) for production
 
 ### Installing Gulp
+``` npm install gulp -g ``` install gulp globally in order to make use of its commands in your CLI.
 ``` npm install gulp --save-dev ``` adds gulp as a dev dependency to your project's package.json.
 
 ### Structure
