@@ -89,6 +89,7 @@ Gulp seems like it would be a useful tool for larger-scale projects and to imple
 - Uses Node.js streams (instead of npm streams) that doesn't need temporary files and folders.  You put one file in, you get one out.
 
 ## Resources
+- [gulp.js](https://gulpjs.com/)
 - [An Introduction to Gulp.js](https://www.sitepoint.com/introduction-gulp-js/)
 - [Wikipedia article](https://en.wikipedia.org/wiki/Gulp.js)
 - [Gulp for Beginners](https://css-tricks.com/gulp-for-beginners/)
