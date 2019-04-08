@@ -22,7 +22,7 @@ Gulp is often used to do frontend tasks like:
 Gulp tasks are run from a CLI shell and require package.json and gulpfile.js in the project's root directory.  gulpfile.js is where all the task operations are defined, required plugins are included, and a default task is defined.
 
 A basic example of a gulpfile is:
-```
+```javascript
 // Adding dependencies
 var gulp = require('gulp');
 var gutil = require('util-gulp');
@@ -42,7 +42,7 @@ There are three primary task methods:
 - ```gulp.dest```: sets the destination folder where build files will be placed.
 
 In the configuration section of the file, you can also specify which folders for Gulp to read and which folders for Gulp to build:
-```
+```javascript
 var gulp = require('gulp');
 var folder = {
   src: 'src/',
@@ -58,7 +58,7 @@ This example compresses images and copies them to the appropriate ```build``` fo
 ``` npm install gulp-newer gulp-imagemin --save-dev ```
 
 2. Include the plugins in the gulpfile.js
-```
+```javascript
 var
   gulp = require('gulp'),
   newer = require('gulp-newer'),
@@ -66,7 +66,7 @@ var
 ```
 
 3. Define the image processing task as a function
-```
+```javascript
 gulp.task('images', function() {
   let out = folder.build + 'images/';
   return gulp.src(folder.src + 'images/**/*')
