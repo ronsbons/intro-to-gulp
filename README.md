@@ -2,7 +2,7 @@
 <img src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png" alt="Gulp logo">
 
 ## Overview
-gulp.js is a build tool in JavaScript that is a task manager. Gulp can automate certain tasks, optimize your images to a smaller size, bundling/minifying CSS and JavaScript files and do other various things through plugins .  It can be configured to modify your original files or create new ones.  Plugins are available to use with Gulp to define its tasks, or you can write your own using JavaScript.  In addition to running tasks, Gulp is a build system, which means it can copy, compile, deploy, test, and lint.
+gulp.js is a build tool in JavaScript that is a task manager. It makes your life as a developer easier through plug ins because instead of doing certain tasks manually it will automatically do it for you .  It can be configured to modify your original files or create new ones depending on what you want to do.  In addition to running tasks, Gulp is a build system, which means it can copy, compile, deploy, test, and lint. Some examples of Gulps uses are automating certain tasks, optimize your images to a smaller size, bundling/minifying CSS and JavaScript files and do other various things through plugins.
 
 ### Uses
 Gulp is often used to do frontend tasks like:
