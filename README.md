@@ -86,7 +86,7 @@ Gulp seems like it would be a useful tool for larger-scale projects and to imple
 
 ### Advantages
 - Gulp helps you end up with a cleaner and easier to read task file with greater consistency between tasks.
-- Uses Node.js streams (instead of npm streams) that doesn't need temporary files and folders.  You put one file in, you get one out.
+- Uses Node.js streams that doesn't need temporary files and folders.  You put one file in, you get one out.
 
 ## Resources
 - [gulp.js](https://gulpjs.com/)
