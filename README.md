@@ -1,5 +1,5 @@
 # intro-to-gulp
-<img src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png" alt="Gulp logo" />
+<img src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png" alt="Gulp logo">
 ## Overview
 gulp.js is a build tool in JavaScript that can automate certain tasks, like compressing images and bundling/minifying CSS and JavaScript files.  It can be configured to modify your original files or create new ones.  Plugins are available to use with Gulp to define its tasks, or you can write your own using JavaScript.  In addition to running tasks, Gulp is a build system, which means it can copy, compile, deploy, test, and lint.
 
@@ -62,23 +62,20 @@ var
 
 3. Define the image processing task as a function
 ```
-// define a new task called 'images'
 gulp.task('images', function() {
-  // define an out folder where build files will be located
   let out = folder.build + 'images/';
-  // sets the Gulp src folder
-  // the /**/* ensures that images in sub-folders are also processed
   return gulp.src(folder.src + 'images/**/*')
-    // pipe all files to the gulp-newer plugin
-    // source files that are newer than destination files are passed through
     .pipe(newer(out))
-    // the remaining new or changed files are piped through the gulp-imagemin plugin
     .pipe(imagemin({ optimizationLevel: 5 }))
-    // the compressed images are output to the Gulp dest folder
     .pipe(gulp.dest(out));
 });
 ```
-.pipe() is a JavaScript function that takes an "n" sequence of operations.  Each operation takes an argument, processes it, and gives the output as the input for the next operation in the sequence.
+- Define a new task called 'images'
+- Define an ```out``` folder where build files will be located
+- Sets the Gulp ```src``` folder and the ```/**/*``` ensures that images in sub-folders are also processed
+- Pipe all files to the ```gulp-newer``` plugin.  Source files that are newer than destination files are passed through.  ```.pipe()``` is a JavaScript function that takes an "n" sequence of operations.  Each operation takes an argument, processes it, and gives the output as the input for the next operation in the sequence.
+- The remaining new or changed files are piped through the ```gulp-imagemin``` plugin
+- The compressed images are output to the Gulp ```dest``` folder
 
 To run the task, run ```gulp images``` from the command line.
 
@@ -91,10 +88,10 @@ Gulp seems like it would be a useful tool for larger-scale projects and to imple
 - Uses Node.js streams (instead of npm streams) that doesn't need temporary files and folders.  You put one file in, you get one out.
 
 ## Resources
-- [An Introduction to Gulp.js] (https://www.sitepoint.com/introduction-gulp-js/)
-- [Wikipedia article] (https://en.wikipedia.org/wiki/Gulp.js)
-- [Gulp for Beginners] (https://css-tricks.com/gulp-for-beginners/)
-- [How to Use Gulp.js to Automate Your CSS Tasks] (https://www.sitepoint.com/automate-css-tasks-gulp/)
-- [How to minify your CSS with gulp] (https://medium.freecodecamp.org/how-to-minify-your-css-with-gulp-6ff3f4a896b5)
-- [A Beginners Guide to the Task Runner Gulp] (https://andy-carter.com/blog/a-beginners-guide-to-the-task-runner-gulp)
+- [An Introduction to Gulp.js](https://www.sitepoint.com/introduction-gulp-js/)
+- [Wikipedia article](https://en.wikipedia.org/wiki/Gulp.js)
+- [Gulp for Beginners](https://css-tricks.com/gulp-for-beginners/)
+- [How to Use Gulp.js to Automate Your CSS Tasks](https://www.sitepoint.com/automate-css-tasks-gulp/)
+- [How to minify your CSS with gulp](https://medium.freecodecamp.org/how-to-minify-your-css-with-gulp-6ff3f4a896b5)
+- [A Beginners Guide to the Task Runner Gulp](https://andy-carter.com/blog/a-beginners-guide-to-the-task-runner-gulp)
 
