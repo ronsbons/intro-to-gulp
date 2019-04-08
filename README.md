@@ -6,9 +6,10 @@ gulp.js is a build tool in JavaScript that can automate certain tasks, like comp
 
 ### Uses
 Gulp is often used to do frontend tasks like:
-- Spinning up a web server
+- Spinning up a web server / running a local server
 - Reloading the browser automatically whenever you save a file
 - Compiling Sass to CSS
+- Minifying code
 - Optimizing all assets (CSS, JS, fonts, and images) for production
 
 ### Installing Gulp
